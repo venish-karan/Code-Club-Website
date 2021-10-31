@@ -2,51 +2,19 @@
 <nav>
 	<ul class="horizontal-list text-center nav-menu"> 
 		<li>
-			<a href="#">Home</a>
+			<a id="nav-home" style="font-size: 20px;" href="{% url 'home' %}">Home</a>
 		</li>
 		<li>
-			<a href="#">About</a>
+			<a id="nav-about" style="font-size: 20px;" href="#scroll-about">About</a>
 		</li>
 		<li>
-			<a href="#">Code Club</a>
+			<a id="nav-team" style="font-size: 20px;" href="#scroll-team">Team</a>
 		</li>
 		<li>
-			<a href="#">Events</a>
+			<a id="nav-gallery" style="font-size: 20px;" href="#scroll-gallery">Gallery</a>
 		</li>
 		<li>
-			<a href="#">Contact</a>
+			<a id="nav-contact" style="font-size: 20px;" href="#scroll-footer">Contact Us</a>
 		</li>
-		{% if user.is_authenticated %}
-			<li>
-				<a href="{% url 'create_event' %}">Add Event</a>
-			</li>
-			<li>
-				<a href="{% url 'logout' %}">Logout</a>
-			</li>
-			<li>
-				<span style="color: white; padding-left: 30px; font-weight: 600" class="username">Hello, {{request.user}}</span>
-			</li>
-		{% else %}
-			<li>
-				<a href="{% url 'register' %}">Register</a>
-			</li>
-			<li>
-				<a href="{% url 'login' %}">Login</a>
-			</li>
-		{% endif %}	
-			<!-- <li>
-			<div class="dropdown">
-			    <button class="dropbtn">More
-			      <i class="fa fa-caret-down"></i>
-			    </button>
-			    <div class="dropdown-content">
-			      <a href="#">Link 1</a>
-			      <a href="#">Link 2</a>
-			      <a href="#">Link 3</a>
-		    </div>	
-
-			</li>
-			 -->
-
 	</ul>
 </nav>
