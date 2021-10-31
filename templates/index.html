@@ -104,7 +104,7 @@
 		{% include "nav.html" %}
 		<div id="name-social-container">
 			<div>
-				<h1 class="my-name">Sri Sairam Engineering College</h1>
+				<h1 class="my-name">Code Club</h1>
 			</div>
 
 			<div class="social-container">
@@ -137,7 +137,7 @@
 			<div id="scroll-about">
 							<div class="section-header">
 				<!-- <span><i class="fas fa-user-graduate"></i></span> -->
-				<h1>🎓About Institution</h1>
+				<h1>🎓About Code Club</h1>
 			</div>
 			<div id="about-text">
 				<p>
@@ -146,6 +146,7 @@
 			</div>
 
 		</section>
+		<br>
 		<div id="scroll-team">
 			<div class="section-header" style="text-align: center;">
 			<h1>Meet Our Team</h1>
@@ -156,8 +157,8 @@
 			<div class="card">
 			  <img class="profile-img" src="{% static 'images/img2.jfif' %}" alt="John" style="width:100%">
 			  <h1>John Doe</h1>
-			  <p class="title">CEO & Founder, Example</p>
-			  <p>Harvard University</p>
+			  <p class="title" style="padding: 5px; color: grey">CEO & Founder, Example</p>
+			  <p style="padding:0 5px 5px 5px; color: grey">Harvard University</p>
 			  <a href="#"><i class="fa fa-dribbble last"></i></a>
 			  <a href="#"><i class="fa fa-twitter last"></i></a>
 			  <a href="#"><i class="fa fa-linkedin last"></i></a>
@@ -167,8 +168,8 @@
 			<div class="card">
 			  <img class="profile-img" src="{% static 'images/img2.jfif' %}" alt="John" style="width:100%">
 			  <h1>John Doe</h1>
-			  <p class="title">CEO & Founder, Example</p>
-			  <p>Harvard University</p>
+			  <p class="title" style="padding: 5px; color: grey">CEO & Founder, Example</p>
+			  <p style="padding:0 5px 5px 5px; color: grey">Harvard University</p>
 			  <a href="#"><i class="fa fa-dribbble last"></i></a>
 			  <a href="#"><i class="fa fa-twitter last"></i></a>
 			  <a href="#"><i class="fa fa-linkedin last"></i></a>
@@ -179,8 +180,8 @@
 			<div class="card">
 			  <img class="profile-img" src="{% static 'images/img3.png' %}" alt="John" style="width:100%">
 			  <h1>John Doe</h1>
-			  <p class="title">CEO & Founder, Example</p>
-			  <p>Harvard University</p>
+			  <p class="title" style="padding: 5px; color: grey">CEO & Founder, Example</p>
+			  <p style="padding:0 5px 5px 5px; color: grey">Harvard University</p>
 			  <a href="#"><i class="fa fa-dribbble last"></i></a>
 			  <a href="#"><i class="fa fa-twitter last"></i></a>
 			  <a href="#"><i class="fa fa-linkedin last"></i></a>
@@ -190,8 +191,8 @@
 			<div class="card">
 			  <img class="profile-img" src="{% static 'images/img3.png' %}" alt="John" style="width:100%">
 			  <h1>John Doe</h1>
-			  <p class="title">CEO & Founder, Example</p>
-			  <p>Harvard University</p>
+			  <p class="title" style="padding: 5px; color: grey;">CEO & Founder, Example</p>
+			  <p style="padding:0 5px 5px 5px; color: grey">Harvard University</p>
 			  <a href="#"><i class="fa fa-dribbble last"></i></a>
 			  <a href="#"><i class="fa fa-twitter last"></i></a>
 			  <a href="#"><i class="fa fa-linkedin last"></i></a>
@@ -203,14 +204,14 @@
 
 		<br>
 		<div class="section-header" style="text-align: center;">
-			<h1>Events</h1>
+			<h1 style="padding-top: 15px;">Events</h1>
 		</div>
 		<section id="event-section">
 			{% for event in events %}
 			<div class="card">
 			  <img class="event-poster" src="{{event.poster.url}}" alt="Denim Jeans" style="width:100%">
 			  <h1>{{event.title}}</h1>
-			  <p class="event-description">{{event.description}}</p>
+			  <p class="event-description" style="font-size: 15px;">{{event.description1}}</p>
 		<!-- 	  <div class="register-button"><a class="btn btn-primary" href="">Register</a></div> -->
 				<button class="view">View</button>
 				
@@ -221,8 +222,10 @@
   				<div class="column">
     				<img id="modal-image" src="{{event.poster.url}}" alt="..." height="500" width="500">
   				</div>
-  				<div class="box-column">
-					  <p style="padding: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, nemo beatae? Provident qui, necessitatibus quibusdam, pariatur sed odit omnis asperiores vel, alias velit quo doloremque soluta ipsa vitae error tempore? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur sunt reiciendis sit perspiciatis? Delectus dolor in magnam dignissimos enim suscipit ratione magni, labore nam vero molestiae, ullam ab eos sequi? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt ipsa molestiae dolore ab? Alias, consequatur minima porro explicabo amet quo voluptas quidem earum dolores quaerat ad, aspernatur, repudiandae expedita neque.</p>
+  				<div class="box-column" style="text-align: justify; padding-top: 4px; padding-bottom: 4px;">
+  					<!-- <h3>{{event.title}}</h3> -->
+  					  <p style="padding: 10px;">{{event.description1}} </p>
+					  <p style="padding: 10px;">{{event.description2}}</p>
 					  <div >
 						 <button style="font-size: 25px; border-radius: 10px; overflow: hidden;">Register</button>
 					  <button style="font-size: 25px; border-radius: 10px; overflow: hidden
@@ -251,7 +254,7 @@
 			</div>
 		</section>
 		<br> 
-		
+		<hr class="breaker">
 		<div id="scroll-gallery">
 			<h1 style="text-align: center;">Our Gallery</h1>
 		<div class="gallery">
@@ -259,13 +262,13 @@
 					<img src="{% static 'images/pexels1.jpg' %}" alt="..." data-original="pexels1.jpg">
 				</div>
 				<div class="img-container">
-					<img src="{% static 'images/pexels1.jpg' %}" alt="..." data-original="pexels1.jpg">
+					<img src="{% static 'images/pexels2.jpg' %}" alt="..." data-original="pexels1.jpg">
 				</div>
 				<div class="img-container">
-					<img src="{% static 'images/pexels1.jpg' %}" alt="..." data-original="pexels1.jpg">
+					<img src="{% static 'images/pexels3.jpg' %}" alt="..." data-original="pexels1.jpg">
 				</div>
 				<div class="img-container">
-					<img src="{% static 'images/pexels1.jpg' %}" alt="..." data-original="pexels1.jpg">
+					<img src="{% static 'images/pexels4.jpg' %}" alt="..." data-original="pexels1.jpg">
 				</div>
 				<div class="img-container">
 					<img src="{% static 'images/pexels1.jpg' %}" alt="..." data-original="pexels1.jpg">

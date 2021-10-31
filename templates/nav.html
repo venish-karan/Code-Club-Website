@@ -1,3 +1,31 @@
+<!-- 
+<nav>
+	<ul class="horizontal-list text-center nav-menu"> 
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+		<li>
+			<a href="#">Our Team</a>
+		</li>
+		<li>
+			<a href="#">Events</a>
+		</li>
+		<li>
+			<a href="#">Gallery</a>
+		</li>
+		<li>
+			<a href="#">Contact Us</a>
+		</li>
+		<li>
+			<a href="{% url 'admin:index' %}">Admin Login</a>
+		</li>
+	</ul>
+</nav> -->
+
+
 
 <nav>
 	<ul class="horizontal-list text-center nav-menu"> 
@@ -15,6 +43,11 @@
 		</li>
 		<li>
 			<a id="nav-contact" style="font-size: 20px;" href="#scroll-footer">Contact Us</a>
+		</li>
+		<li>
+			<a id="nav-contact" style="font-size: 20px;" href="{% url 'admin:index' %}">
+				Admin Login
+			</a>
 		</li>
 	</ul>
 </nav>

@@ -15,7 +15,7 @@
 		<div id="event-description">
 			<h1>{{event.title}}</h1>
 			<br>
-			<p>{{event.description}}</p>
+			<p>{{event.description2}}</p>
 			<br>
 			<br>
 			<p>{{event.end_date}}</p>
@@ -23,9 +23,8 @@
 			<div>
 				<a class="btn btn-primary detail-buttons" href="#">Regsiter</a>
 
-				<a class="btn btn-secondary detail-buttons" href="{% url 'event_update_view' event.id %}">Update</a>
+				<a class="btn btn-secondary detail-buttons" href="#">Update</a>
 
-				<a class="btn btn-danger detail-buttons" href="{% url 'event_delete_view' event.id %}">Delete</a>
 			</div>
 			
 		</div>	
